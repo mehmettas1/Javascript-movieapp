@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mega Menü</title>
+    <style>
+        /* Stil tanımlamalarını buraya ekleyin */
+        /* Örnek: */
+        .mega-menu {
+            width: 300px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .submenu1 {
+			display: flex;
+			gap: 2rem;
+		}
+        .mega-menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .mega-menu ul li {
+            padding: 10px 0;
+        }
+        
+        .mega-menu ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .mega-menu ul li a:hover {
+            color: #000;
+            font-weight: bold;
+        }
+        
+        /* Alt menü stil tanımlamaları */
+        .sub-menu {
+            display: none;
+            position: absolute;
+            width: 500px;
+            background-color: #f9f9f9;
+            padding: 10px;
+			left: 21.7rem;
+        }
+        
+        .mega-menu ul li:hover .sub-menu {
+            display: block;
+        }
+        
+        .sub-menu ul li {
+            padding: 5px 0;
+        }
+        
+        .sub-menu ul li a {
+            color: #666;
+            text-decoration: none;
+        }
+        
+        .sub-menu ul li a:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="mega-menu">
+		<h2>Kategoriler</h2>
+        <ul>
+            <li>
+                <a href="#">Menü Öğesi 1</a>
+                <div class="sub-menu">
+					<div class="submenu1">
+						<div class="column-1">
+							<ul>
+								<li><a href="#">Alt Menü Öğesi 4</a></li>
+								<li><a href="#">Alt Menü Öğesi 5</a></li>
+								<li><a href="#">Alt Menü Öğesi 6</a></li>
+							</ul>
+						</div>
+						<div class="column-2">  <ul>
+							<li><a href="#">Alt Menü Öğesi 4</a></li>
+							<li><a href="#">Alt Menü Öğesi 5</a></li>
+							<li><a href="#">Alt Menü Öğesi 6</a></li>
+						</ul></div>
+						<div class="column-3">  <ul>
+							<li><a href="#">Alt Menü Öğesi 4</a></li>
+							<li><a href="#">Alt Menü Öğesi 5</a></li>
+							<li><a href="#">Alt Menü Öğesi 6</a></li>
+						</ul></div>
+					</div>
+                </div>
+            </li>
+            <li>
+                <a href="#">Menü Öğesi 2</a>
+                <div class="sub-menu">
+					<div class="submenu1">
+						<div class="column-1">
+							<ul>
+								<li><a href="#">Alt Menü Öğesi 4</a></li>
+								<li><a href="#">Alt Menü Öğesi 5</a></li>
+								<li><a href="#">Alt Menü Öğesi 6</a></li>
+							</ul>
+						</div>
+						<div class="column-2">  <ul>
+							<li><a href="#">Alt Menü Öğesi 4</a></li>
+							<li><a href="#">Alt Menü Öğesi 5</a></li>
+							<li><a href="#">Alt Menü Öğesi 6</a></li>
+						</ul></div>
+						<div class="column-3">  <ul>
+							<li><a href="#">Alt Menü Öğesi 4</a></li>
+							<li><a href="#">Alt Menü Öğesi 5</a></li>
+							<li><a href="#">Alt Menü Öğesi 6</a></li>
+						</ul></div>
+					</div>
+                </div>
+            </li>
+            <li><a href="#">Menü Öğesi 3</a></li>
+            <li><a href="#">Menü Öğesi 4</a></li>
+            <li><a href="#">Menü Öğesi 5</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
