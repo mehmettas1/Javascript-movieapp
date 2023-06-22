@@ -68,5 +68,36 @@ main {
   border-radius: 3px;
 }
 
+.movie img {
+  width: 100%;
+}
 
+.movie-info {
+  color: #79b8f3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info span {
+  background-color: var(--main-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: lightsalmon;
+}
+
+.movie-info span.red {
+  color: lightcoral;
+}
 
