@@ -14,19 +14,30 @@ const SEARCH_API =
     const res = await fetch(url);
     const data = await res.json();
     console.log(data.results);
+    showMovies(data.results)
   }
 
 
-  form.addEventListener("submit",(e) =>{
-    e.preventDefault();
-    const searchTerm = search.value;
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const searchTerm = search.value.trim();
 
-    if (searchTerm && searchTerm !== '') {
-      getMovies(SEARCH_API+sesearchTerm)
+  if (searchTerm) {
+    getMovies(SEARCH_API + searchTerm);
+    search.value = "";
+  } else {
+    window.location.reload();
+  }
+});
 
-      search.value = "";
-    }else {
-      window.location.reload();
-    }
+function showMovies(movies) {
+  movies.forEach((movie)=>{
+    const { title ,poster_path,vote_average,overview} = movie;
 
+    const movieEl = document.createElement("div");
+    movieEl.classList.add("movie");
+
+    movieEl.innerHTML = `
+    `
   })
+}
