@@ -13,7 +13,7 @@ const SEARCH_API =
   async function getMovies(url) {
     const res = await fetch(url);
     const data = await res.json();
-    console.log(data.results);
+ 
     showMovies(data.results)
   }
 
@@ -31,7 +31,7 @@ form.addEventListener("submit", (e) => {
 });
 
 function showMovies(movies) {
-  const main = "";
+ main.innerHTML =""
   movies.forEach((movie)=>{
     const { title ,poster_path,vote_average,overview} = movie;
 
@@ -54,8 +54,7 @@ function showMovies(movies) {
   </div>
   
   `
-
-  main.appendChild(movieEl);
+  main.appendChild(movieEl)
 })
 
 }
